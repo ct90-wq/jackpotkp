@@ -1,64 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- META PIXEL + AUTO SUBSCRIBE (ONE SINGLE CODE) -->
+<head><!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+if(f.fbq)return;
+n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','25581722994786479');
+fbq('init','1661982551875303');
 fbq('track','PageView');
-
-/* REAL SUBSCRIBE – ONLY ON THANK YOU / SUCCESS PAGE */
-if (
-  window.location.href.includes('thank') ||
-  window.location.href.includes('success') ||
-  window.location.href.includes('confirm')
-){
-  fbq('track','Subscribe',{
-    value: 1.00,
-    currency: 'INR'
-  });
-}
 </script>
-<!-- END -->
-<meta charset="UTF-8">
-<title>JACKPOT KING PANDIT {2015 ™}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ✅ META / FB PIXEL SAFE ZONE (YAHI PASTE KARNA) -->
-<!-- META PIXEL + AUTO SUBSCRIBE (ONE SINGLE CODE) -->
-<script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init','1199226914924115');
-fbq('track','PageView');
-
-/* REAL SUBSCRIBE – ONLY ON THANK YOU / SUCCESS PAGE */
-if (
-  window.location.href.includes('thank') ||
-  window.location.href.includes('success') ||
-  window.location.href.includes('confirm')
-){
-  fbq('track','Subscribe',{
-    value: 1.00,
-    currency: 'INR'
-  });
-}
-</script>
-<!-- END -->
+<!-- End Meta Pixel Code -->
 <style>
 *{
     margin:0;
@@ -192,9 +152,21 @@ body{
     </a>
 
 </div>
+</script><script>
+function trackSubscribe(){
+  if(!window.subscribedOnce){
+    window.subscribedOnce = true;
 
+    fbq('track','Subscribe',{
+      value: 0.01,
+      currency: 'INR'
+    });
+  }
+}
+</script>
 </body>
 </html>
+
 
 
 
